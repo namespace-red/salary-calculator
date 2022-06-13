@@ -23,8 +23,12 @@ FORMS += \
     ui/MainWindow.ui \
     ui/SettingsWindow.ui
 
+RESOURCES += \
+    Resource.qrc
+
 TRANSLATIONS += \
     SalaryCalculator_ru_RU.ts
+
 CONFIG += lrelease
 CONFIG += embed_translations
 

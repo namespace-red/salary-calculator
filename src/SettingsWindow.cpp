@@ -6,6 +6,8 @@ SettingsWindow::SettingsWindow(QWidget *parent) :
     _ui(new Ui::SettingsWindow)
 {
     _ui->setupUi(this);
+    setWindowTitle("Settings");
+    setWindowIcon(QIcon(":/images/icon32"));
 }
 
 SettingsWindow::~SettingsWindow()

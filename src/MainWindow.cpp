@@ -7,6 +7,9 @@ MainWindow::MainWindow(SettingsWindow &settingsWindow, QWidget *parent)
     , _ui(new Ui::MainWindow)
 {
     _ui->setupUi(this);
+    setWindowTitle("SalaryCalculator");
+    setWindowIcon(QIcon(":/images/icon32"));
+
     connect(_ui->actionSettings, &QAction::triggered, &_settingsWindow, &SettingsWindow::show);
 }
 
