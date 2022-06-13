@@ -12,13 +12,16 @@ INCLUDEPATH += . include
 
 SOURCES += \
     src/MainWindow.cpp \
+    src/SettingsWindow.cpp \
     src/main.cpp
 
 HEADERS += \
-    include/MainWindow.h
+    include/MainWindow.h \
+    include/SettingsWindow.h
 
 FORMS += \
-    MainWindow.ui
+    ui/MainWindow.ui \
+    ui/SettingsWindow.ui
 
 TRANSLATIONS += \
     SalaryCalculator_ru_RU.ts
