@@ -346,18 +346,25 @@
     <property name="title">
      <string>Файл</string>
     </property>
-    <addaction name="settingsAction"/>
-    <addaction name="quitAction"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <addaction name="actionGitHub"/>
    </widget>
    <addaction name="menu"/>
+   <addaction name="menu_2"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="settingsAction">
+  <action name="actionSettings">
    <property name="text">
     <string>Настройки</string>
    </property>
   </action>
-  <action name="quitAction">
+  <action name="actionQuit">
    <property name="text">
     <string>Выход</string>
    </property>
@@ -365,11 +372,16 @@
     <string>Ctrl+Q</string>
    </property>
   </action>
+  <action name="actionGitHub">
+   <property name="text">
+    <string>GitHub</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections>
   <connection>
-   <sender>quitAction</sender>
+   <sender>actionQuit</sender>
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>close()</slot>

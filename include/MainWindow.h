@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMessageBox>
 
 #include "SettingsWindow.h"
 
@@ -16,6 +17,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(SettingsWindow &settingsWindow, QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+    void on_actionGitHub_triggered();
 
 private:
     SettingsWindow &_settingsWindow;

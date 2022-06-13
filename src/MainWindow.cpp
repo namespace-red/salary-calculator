@@ -7,10 +7,15 @@ MainWindow::MainWindow(SettingsWindow &settingsWindow, QWidget *parent)
     , _ui(new Ui::MainWindow)
 {
     _ui->setupUi(this);
-    connect(_ui->settingsAction, &QAction::triggered, &_settingsWindow, &SettingsWindow::show);
+    connect(_ui->actionSettings, &QAction::triggered, &_settingsWindow, &SettingsWindow::show);
 }
 
 MainWindow::~MainWindow()
 {
     delete _ui;
+}
+
+void MainWindow::on_actionGitHub_triggered()
+{
+    QMessageBox::about(this, "GitHub", "<a href='https://github.com/namespace-red/salary-calculator'>GitHub</a>");
 }
