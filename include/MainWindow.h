@@ -21,6 +21,8 @@ public:
 private slots:
     void on_actionGitHub_triggered();
 
+    void on_actionAboutQt_triggered();
+
 private:
     SettingsWindow &_settingsWindow;
     Ui::MainWindow *_ui;

@@ -19,3 +19,9 @@ void MainWindow::on_actionGitHub_triggered()
 {
     QMessageBox::about(this, "GitHub", "<a href='https://github.com/namespace-red/salary-calculator'>GitHub</a>");
 }
+
+void MainWindow::on_actionAboutQt_triggered()
+{
+    QMessageBox::aboutQt(this, "О Qt");
+}
+

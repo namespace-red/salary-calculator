@@ -354,6 +354,7 @@
      <string>Справка</string>
     </property>
     <addaction name="actionGitHub"/>
+    <addaction name="actionAboutQt"/>
    </widget>
    <addaction name="menu"/>
    <addaction name="menu_2"/>
@@ -375,6 +376,11 @@
   <action name="actionGitHub">
    <property name="text">
     <string>GitHub</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="text">
+    <string>О Qt</string>
    </property>
   </action>
  </widget>
