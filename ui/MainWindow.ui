@@ -347,6 +347,7 @@
      <string>Файл</string>
     </property>
     <addaction name="settingsAction"/>
+    <addaction name="quitAction"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -356,7 +357,32 @@
     <string>Настройки</string>
    </property>
   </action>
+  <action name="quitAction">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>quitAction</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>225</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
