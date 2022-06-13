@@ -14,10 +14,7 @@ public:
     explicit SettingsWindow(QWidget *parent = nullptr);
     ~SettingsWindow();
 
-protected:
-    void changeEvent(QEvent *e);
-
 private:
-    Ui::SettingsWindow *ui;
+    Ui::SettingsWindow *_ui;
 };
 

@@ -1,21 +1,16 @@
 #include "MainWindow.h"
 #include "ui_MainWindow.h"
 
-MainWindow::MainWindow(QWidget *parent)
+MainWindow::MainWindow(SettingsWindow &settingsWindow, QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , _settingsWindow(settingsWindow)
+    , _ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+    _ui->setupUi(this);
+    connect(_ui->settingsAction, &QAction::triggered, &_settingsWindow, &SettingsWindow::show);
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
+    delete _ui;
 }
-
-
-void MainWindow::on_calendarWidget_clicked(const QDate &date)
-{
-
-}
-
